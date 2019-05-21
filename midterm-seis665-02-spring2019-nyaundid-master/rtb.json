@@ -1,0 +1,77 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "SubnetId": "subnet-0f392040087529bd3", 
+                    "RouteTableAssociationId": "rtbassoc-0345900624992562f", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0362a43daa17c90a0"
+                }, 
+                {
+                    "SubnetId": "subnet-08376380230d92d23", 
+                    "RouteTableAssociationId": "rtbassoc-041a0830028a0f2eb", 
+                    "Main": false, 
+                    "RouteTableId": "rtb-0362a43daa17c90a0"
+                }
+            ], 
+            "RouteTableId": "rtb-0362a43daa17c90a0", 
+            "VpcId": "vpc-06f9ca09e5c744ab3", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "new-midterm-1", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.19.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "Origin": "CreateRoute", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "NatGatewayId": "nat-0dfe97a24f895a012", 
+                    "State": "active"
+                }
+            ], 
+            "OwnerId": "176233943188"
+        }, 
+        {
+            "Associations": [
+                {
+                    "RouteTableAssociationId": "rtbassoc-0373ef1f1c18a8f20", 
+                    "Main": true, 
+                    "RouteTableId": "rtb-0053c5bcf4f4da660"
+                }
+            ], 
+            "RouteTableId": "rtb-0053c5bcf4f4da660", 
+            "VpcId": "vpc-06f9ca09e5c744ab3", 
+            "PropagatingVgws": [], 
+            "Tags": [
+                {
+                    "Value": "orginal", 
+                    "Key": "Name"
+                }
+            ], 
+            "Routes": [
+                {
+                    "GatewayId": "local", 
+                    "DestinationCidrBlock": "10.19.0.0/16", 
+                    "State": "active", 
+                    "Origin": "CreateRouteTable"
+                }, 
+                {
+                    "GatewayId": "igw-08d8365b6b1eed8ed", 
+                    "DestinationCidrBlock": "0.0.0.0/0", 
+                    "State": "active", 
+                    "Origin": "CreateRoute"
+                }
+            ], 
+            "OwnerId": "176233943188"
+        }
+    ]
+}

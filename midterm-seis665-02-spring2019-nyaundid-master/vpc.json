@@ -1,0 +1,28 @@
+{
+    "Vpcs": [
+        {
+            "VpcId": "vpc-06f9ca09e5c744ab3", 
+            "InstanceTenancy": "default", 
+            "Tags": [
+                {
+                    "Value": "midterm-vpc", 
+                    "Key": "Name"
+                }
+            ], 
+            "CidrBlockAssociationSet": [
+                {
+                    "AssociationId": "vpc-cidr-assoc-0059c50619ea9c65f", 
+                    "CidrBlock": "10.19.0.0/16", 
+                    "CidrBlockState": {
+                        "State": "associated"
+                    }
+                }
+            ], 
+            "State": "available", 
+            "DhcpOptionsId": "dopt-093221328278560f9", 
+            "OwnerId": "176233943188", 
+            "CidrBlock": "10.19.0.0/16", 
+            "IsDefault": false
+        }
+    ]
+}

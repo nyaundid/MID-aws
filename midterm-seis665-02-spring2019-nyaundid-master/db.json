@@ -1,0 +1,85 @@
+{
+    "DBInstances": [
+        {
+            "PubliclyAccessible": false, 
+            "MasterUsername": "root", 
+            "MonitoringInterval": 0, 
+            "LicenseModel": "general-public-license", 
+            "VpcSecurityGroups": [
+                {
+                    "Status": "active", 
+                    "VpcSecurityGroupId": "sg-0b84b997163a6405c"
+                }
+            ], 
+            "InstanceCreateTime": "2019-03-20T00:20:59.876Z", 
+            "CopyTagsToSnapshot": true, 
+            "OptionGroupMemberships": [
+                {
+                    "Status": "in-sync", 
+                    "OptionGroupName": "default:mysql-5-6"
+                }
+            ], 
+            "PendingModifiedValues": {}, 
+            "Engine": "mysql", 
+            "MultiAZ": false, 
+            "LatestRestorableTime": "2019-03-20T01:20:00Z", 
+            "DBSecurityGroups": [], 
+            "DBParameterGroups": [
+                {
+                    "DBParameterGroupName": "default.mysql5.6", 
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ], 
+            "PerformanceInsightsEnabled": false, 
+            "AutoMinorVersionUpgrade": true, 
+            "PreferredBackupWindow": "03:17-03:47", 
+            "DBSubnetGroup": {
+                "Subnets": [
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-0f392040087529bd3", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1a"
+                        }
+                    }, 
+                    {
+                        "SubnetStatus": "Active", 
+                        "SubnetIdentifier": "subnet-08376380230d92d23", 
+                        "SubnetAvailabilityZone": {
+                            "Name": "us-east-1b"
+                        }
+                    }
+                ], 
+                "DBSubnetGroupName": "midterm-db-subnet-group", 
+                "VpcId": "vpc-06f9ca09e5c744ab3", 
+                "DBSubnetGroupDescription": "subnet for the db first", 
+                "SubnetGroupStatus": "Complete"
+            }, 
+            "ReadReplicaDBInstanceIdentifiers": [], 
+            "AllocatedStorage": 20, 
+            "DBInstanceArn": "arn:aws:rds:us-east-1:176233943188:db:midterm-db", 
+            "BackupRetentionPeriod": 7, 
+            "DBName": "rootassign5", 
+            "PreferredMaintenanceWindow": "thu:07:23-thu:07:53", 
+            "Endpoint": {
+                "HostedZoneId": "Z2R2ITUGPM61AM", 
+                "Port": 3306, 
+                "Address": "midterm-db.cznnerkufhvt.us-east-1.rds.amazonaws.com"
+            }, 
+            "DBInstanceStatus": "available", 
+            "IAMDatabaseAuthenticationEnabled": false, 
+            "EngineVersion": "5.6.40", 
+            "DeletionProtection": false, 
+            "AvailabilityZone": "us-east-1b", 
+            "DomainMemberships": [], 
+            "StorageType": "gp2", 
+            "DbiResourceId": "db-7SPKIBHH7WUYSYJ54ISQSEQGVU", 
+            "CACertificateIdentifier": "rds-ca-2015", 
+            "StorageEncrypted": false, 
+            "AssociatedRoles": [], 
+            "DBInstanceClass": "db.t2.micro", 
+            "DbInstancePort": 0, 
+            "DBInstanceIdentifier": "midterm-db"
+        }
+    ]
+}

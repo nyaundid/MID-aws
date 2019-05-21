@@ -1,0 +1,31 @@
+{
+    "LoadBalancers": [
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-06f9ca09e5c744ab3", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:176233943188:loadbalancer/app/midterm-web-1b/1efbc0c62bde6e90", 
+            "State": {
+                "Code": "active"
+            }, 
+            "DNSName": "midterm-web-1b-715165330.us-east-1.elb.amazonaws.com", 
+            "SecurityGroups": [
+                "sg-08c0b69ddc7ec8e47"
+            ], 
+            "LoadBalancerName": "midterm-web-1b", 
+            "CreatedTime": "2019-03-19T23:40:46.190Z", 
+            "Scheme": "internet-facing", 
+            "Type": "application", 
+            "CanonicalHostedZoneId": "Z35SXDOTRQ7X7K", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-005b04b32919f16f3", 
+                    "ZoneName": "us-east-1b"
+                }, 
+                {
+                    "SubnetId": "subnet-0808b20245588c013", 
+                    "ZoneName": "us-east-1a"
+                }
+            ]
+        }
+    ]
+}
